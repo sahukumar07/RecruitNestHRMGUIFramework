@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestRunner-Chrome(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.hrm.payrollTests.ToCreatePayrollTest">
+        <methods>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="ToCreatePayrollWithEmployee_001"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+        </methods>
+      </class> <!-- com.hrm.payrollTests.ToCreatePayrollTest -->
+      <class name="com.hrm.employeeTests.ToCreateEmployeeTest">
+        <methods>
+          <include name="ToCreateEmployeeTest_001"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="ToGenerateAuthTokenWithEmployee_003"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="ToCreateEmployeePayrollTest_002"/>
+        </methods>
+      </class> <!-- com.hrm.employeeTests.ToCreateEmployeeTest -->
+      <class name="com.hrm.projectTests.ToCreateProjectTest">
+        <methods>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="ToGenerateAuthTokenWithProject_002"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="ToCreateProjectTest_001"/>
+        </methods>
+      </class> <!-- com.hrm.projectTests.ToCreateProjectTest -->
+    </classes>
+  </test> <!-- TestRunner-Chrome(failed) -->
+  <test thread-count="2" parallel="tests" name="TestRunner-Firefox(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="com.hrm.payrollTests.ToCreatePayrollTest">
+        <methods>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="ToCreatePayrollWithEmployee_001"/>
+          <include name="ToGenerateAuthTokenWithPayroll_002"/>
+        </methods>
+      </class> <!-- com.hrm.payrollTests.ToCreatePayrollTest -->
+      <class name="com.hrm.employeeTests.ToCreateEmployeeTest">
+        <methods>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="ToCreateEmployeeTest_001"/>
+          <include name="ToGenerateAuthTokenWithEmployee_003"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="ToCreateEmployeePayrollTest_002"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+        </methods>
+      </class> <!-- com.hrm.employeeTests.ToCreateEmployeeTest -->
+      <class name="com.hrm.projectTests.ToCreateProjectTest">
+        <methods>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="ToGenerateAuthTokenWithProject_002"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="ToCreateProjectTest_001"/>
+        </methods>
+      </class> <!-- com.hrm.projectTests.ToCreateProjectTest -->
+    </classes>
+  </test> <!-- TestRunner-Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
